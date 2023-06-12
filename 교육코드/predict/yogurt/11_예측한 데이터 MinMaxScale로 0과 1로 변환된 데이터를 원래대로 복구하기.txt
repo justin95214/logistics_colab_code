@@ -1,0 +1,7 @@
+denormalized_data= [(p*(s[1] - s[0])+s[0])[0] for p, s in zip(pred, test_standard)]
+denormalized_answer= [p*(s[1] - s[0])+s[0] for p,s in zip(y_test, test_standard)]
+
+
+denormalized_data = np.round(denormalized_data,0)
+
+print(denormalized_data, denormalized_answer)

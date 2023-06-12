@@ -1,0 +1,4 @@
+
+df= pd.read_csv("/content/logistic/yogurt.csv")
+
+print(df.head(10), df.info)

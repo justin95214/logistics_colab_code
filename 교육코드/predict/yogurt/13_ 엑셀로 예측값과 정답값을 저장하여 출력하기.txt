@@ -1,0 +1,3 @@
+csv_data = [[a,d] for a,d in zip(denormalized_answer, denormalized_data)]
+temp_df = pd.DataFrame(csv_data, columns=["answer","predict"])
+temp_df.to_csv("/content/logistic/result.csv")

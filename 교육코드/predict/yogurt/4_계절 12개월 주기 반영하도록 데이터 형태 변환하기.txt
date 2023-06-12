@@ -1,0 +1,11 @@
+
+data = df['Level'].values
+seq_len = 12
+sequence_length = seq_len + 1
+
+result = []
+for index in range(len(data) - sequence_length):
+        result.append(data[index: index + sequence_length])
+
+
+result

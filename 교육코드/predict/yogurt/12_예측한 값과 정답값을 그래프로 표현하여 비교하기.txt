@@ -1,0 +1,10 @@
+
+fig = plt.figure(facecolor='white', figsize=(20, 10))
+ax = fig.add_subplot(111)
+ax.plot(denormalized_answer, label='True')
+ax.plot(denormalized_data, label='Prediction')
+ax.set_xlabel('Date')
+ax.set_ylabel('Stuff')
+dateFmt = mdates.DateFormatter('%Y-%m-%d')
+ax.legend()
+plt.show()

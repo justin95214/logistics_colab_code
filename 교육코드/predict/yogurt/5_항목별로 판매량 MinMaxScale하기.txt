@@ -1,0 +1,12 @@
+normalized_data = []
+#( X- (X의 최솟값) ) / ( X의 최댓값 - X의 최솟값 )
+min_max_value_list = []
+
+for window in result:
+    normalized_window = [(p-min(window)) / (max(window) - min(window)) for p in window]
+    min_max_value_list.append([min(window), max(window)])
+    normalized_data.append(normalized_window)
+
+result = np.array(normalized_data)
+print(result)
+print(result.shape)
